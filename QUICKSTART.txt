@@ -1,0 +1,84 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                    PRO MARKET DASHBOARD - QUICKSTART                      ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+⚠️  STEP 0: INSTALL NODE.JS (REQUIRED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Download from: https://nodejs.org/
+   Install the LTS version (Node.js 20.x or 18.x)
+   
+   After installing, open a NEW terminal and verify:
+   > node --version
+   > npm --version
+
+
+🚀 STEP 1: INSTALL DEPENDENCIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Terminal #1 - Backend:
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │ cd backend                                                          │
+   │ npm install                                                         │
+   └─────────────────────────────────────────────────────────────────────┘
+   
+   Terminal #2 - Frontend:
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │ cd frontend                                                         │
+   │ npm install                                                         │
+   └─────────────────────────────────────────────────────────────────────┘
+
+
+🏃 STEP 2: START BACKEND SERVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   In Terminal #1 (Backend):
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │ cd backend                                                          │
+   │ npm run dev                                                         │
+   └─────────────────────────────────────────────────────────────────────┘
+   
+   ✅ Wait for: "Server running on http://localhost:3000"
+   ⚠️  KEEP THIS TERMINAL OPEN!
+
+
+🎨 STEP 3: START FRONTEND SERVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   In Terminal #2 (Frontend) - NEW WINDOW:
+   ┌─────────────────────────────────────────────────────────────────────┐
+   │ cd frontend                                                         │
+   │ npm run dev                                                         │
+   └─────────────────────────────────────────────────────────────────────┘
+   
+   ✅ Wait for: "Local: http://localhost:5173/"
+   ⚠️  KEEP THIS TERMINAL OPEN TOO!
+
+
+🌐 STEP 4: OPEN IN BROWSER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Open your browser and go to:
+   
+   ► http://localhost:5173
+   
+   You should see the PRO Market Dashboard!
+
+
+✨ TRY THESE FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   • Search for: "laptop", "headphones", "book", "shoes"
+   • Sort by: Price, Rating, Reviews
+   • Filter by: Category (Electronics, Books, etc.)
+   • Click cards to: View reviews and price history
+   • Check: "Best Pick" recommendation banner
+
+
+🛑 TO STOP THE APPLICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   In each terminal window, press: Ctrl+C
+
+
+📚 DETAILED GUIDE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   See: START_APPLICATION.md (full instructions with troubleshooting)
+
+
+═══════════════════════════════════════════════════════════════════════════
+              Need Node.js? Download from: https://nodejs.org/
+═══════════════════════════════════════════════════════════════════════════

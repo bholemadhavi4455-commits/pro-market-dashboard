@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+}
+
+/* ===========================================
+   GLOBAL RESPONSIVE UTILITIES
+   =========================================== */
+
+/* Responsive Images - Prevent overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Touch Target Accessibility - Minimum 44x44px for all interactive elements */
+button,
+a,
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+[role="button"],
+.btn,
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+  /* Ensure adequate padding for touch interaction */
+  padding: 12px 16px;
+}
+
+/* Exception for inline text links where min-height doesn't apply */
+a:not(.btn):not([role="button"]) {
+  min-height: auto;
+  padding: 8px 4px;
+  display: inline-block;
+}
+
+/* Checkbox and radio specific sizing */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0;
+  /* Add larger clickable area with padding on parent label */
+}
+
+/* Ensure labels around checkboxes have adequate touch targets */
+label:has(input[type="checkbox"]),
+label:has(input[type="radio"]) {
+  min-height: 44px;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Responsive Grid and Table Constraints */
+.results-grid,
+table,
+.grid,
+[class*="grid"] {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Responsive Tables - Enable horizontal scroll on small screens */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media (max-width: 767px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Touch-friendly spacing for mobile */
+@media (max-width: 767px) {
+  button,
+  a[role="button"],
+  .btn {
+    /* Increase spacing between touch targets */
+    margin: 8px 4px;
+  }
+  
+  /* Ensure form inputs are touch-friendly */
+  input,
+  select,
+  textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 44px;
+  }
+}
